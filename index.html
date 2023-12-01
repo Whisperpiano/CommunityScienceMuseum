@@ -6,7 +6,7 @@
     <meta name="description" content="Come join us at the Community Science Museum where we are committed to making science accessible
     to all.">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#6d3e7f">  <!-- CHANGE COLOR -->
+    <meta name="theme-color" content="#0d6251">
 
     <!-- OPEN GRAPH -->
     <meta property="og:title" content="CSM - Community Science Museum">
@@ -14,8 +14,9 @@
     <meta property="og:image" content="images/home/hero_header.webp">
     <meta property="og:image:alt" content="A picture of the Community Science Museum">
 
-    <link rel="icon" type="svg" href="images/favicon.svg">
+    <link rel="icon" type="image/svg" href="images/favicon.svg">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,120 +27,138 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <picture>
-                <img src="images/home/Logo.svg" alt="Logotype of Community Science Museum">
-            </picture>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Exhibitions</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Visit</a></li>
-                <li><a href="#">About</a></li>
-                <li><button type="button">Donate</button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero-header">
+    <header>   
+        <section class="flex justify-sb align-items-center pd-40">
+            <div class="logo">
+                <picture>
+                    <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
+                </picture>
+            </div>
+            <nav>
+                <ul class="flex align-items-center gap-30">
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="contact.html">Visit</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><button type="button"><a href="contributions.html" class="btn-1 pd-10-30">Donate</a></button></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="hero-header relative">
             <figure>
                 <picture>
-                    <source srcset="images/home/Hero_header.webp" type="image/webp">
-                    <!--<source srcset="imagen-grande.jpg" media="(min-width: 1200px)">
-                    <source srcset="imagen-mediana.jpg" media="(min-width: 600px)"> -->
+                    <source srcset="images/home/Hero_header_scaled_2.webp" type="image/webp">
                     <img src="hero_header" alt="Colorful picture of the museum exterior">
                 </picture>
             </figure>
-            <div>
+            <div class="hero-header__text mw-630">
                 <h1>Explore, learn and ignite your passion for science.</h1>
-                <h2>An interactive experience for young minds and families. Unleash the wonders of science together!</h2>
+                <h2>An interactive experience for young minds and families.</h2>
+                <h2>Unleash the wonders of science together!</h2>
             </div>
             <div>
-                <span>Scroll to explore</span>
-                <i class="fa-solid fa-chevron-down"></i>
+                <a href="#explore" class="hero-header__scroll pd-50 width-100 flex column align-items-center align-content-center gap-10">
+                    <span>Scroll to explore</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </div>
         </section>
+    </header>
 
-        <section class="welcome">
-            <article>
-                <picture>
-                    <source srcset="images/home/img_1_vector.webp" type="image/webp">
-                    <img src="img_1" alt="Girl playing VR">
-                </picture>
-                <div>
-                    <h3>Explore together</h3>
-                    <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p> <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
-                </div>
-            </article>
-            <article>
-                <picture>
-                    <source srcset="images/home/img_2_vector.webp" type="image/webp">
-                    <img src="img_1" alt="Girl exploring the sky with a telescope">
-                </picture>
-                <h3>Discover the wonder within</h3>
-                <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p> 
-                <p>We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life(apart from the dinosaur exhihibits - they only come to life at night when everyone's gone home)</p>
-            </article> 
+    <main>
+        <section class="welcome-bkg">
+            <div class="welcome mw-1340 pd-90-0 flex column gap-60" id="explore">
+                <article>
+                    <picture>
+                        <source srcset="images/home/img_1_vector.webp" type="image/webp">
+                        <img src="img_1" alt="Girl playing VR">
+                    </picture>
+                    <div>
+                        <h3>Explore together</h3>
+                        <p class="pd-top-20">Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p> 
+                        <p class="pd-top-10">Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
+                    </div>
+                </article>
+    
+                <article>
+                    <picture>
+                        <source srcset="images/home/img_2_vector.webp" type="image/webp">
+                        <img src="img_2" alt="Girl exploring the sky with a telescope">
+                    </picture>
+                    <div>
+                        <h3>Discover the wonder within</h3>
+                        <p class="pd-top-20">The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p> 
+                        <p class="pd-top-10">We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life(apart from the dinosaur exhibits - they only come to life at night when everyone's gone home)</p>
+                    </div>
+                </article> 
+            </div>
+
         </section>
+        
 
         <section class="exhibition-spaces">
-            <header>
+            <header class="banner-titles">
                 <h2>Exhibition spaces</h2>
                 <div></div>
             </header>
 
-            <div class="card-container">
+            <div class="card-container flex gap-30 text-center mw-1340">
                 <article class="card">
                     <picture>
                         <source srcset="images/home/exhibition_card_1.webp" type="image/webp">
-                        <img src="exhibition_card_1" alt="Representation of a heart">
+                        <img class="width-100" src="exhibition_card_1" alt="Representation of a heart">
                     </picture>
-                    <div>
-                        <h4>Biology and Medicine</h4>
-                        <p>Uncover the complexities of life, from microscopic wonders to the cutting edge of medical advancements.Immerse yourself in interactive displays and discover the incredible stories written within the human body.</p>
-                        <button type="button">View exhibit</button>
+                    <div  class="card-bottom">
+                        <div class="pd-30-20">
+                            <h4>Biology and Medicine</h4>
+                            <p>Uncover the complexities of life, from microscopic wonders to the cutting edge of medical advancements.Immerse yourself in interactive displays and discover the incredible stories written within the human body.</p>
+                        </div>
+                        <button class="width-100 btn-2" type="button">View exhibit</button>
                     </div>
                 </article>
 
                 <article class="card">
                     <picture>
                         <source srcset="images/home/exhibition_card_2.webp" type="image/webp">
-                        <img src="exhibition_card_2" alt="Person sitting in a space suit experiencing the power of gravity">
+                        <img class="width-100" src="exhibition_card_2" alt="Person sitting in a space suit experiencing the power of gravity">
                     </picture>
-                    <div>
-                        <h4>Biology and Medicine</h4>
-                        <p>Uncover the complexities of life, from microscopic wonders to the cutting edge of medical advancements.Immerse yourself in interactive displays and discover the incredible stories written within the human body.</p>
-                        <button type="button">View exhibit</button>
+                    <div class="card-bottom" >
+                        <div class="pd-30-20">
+                            <h4>Biology and Medicine</h4>
+                            <p>Step into the future with our 'Robotics & AI' exhibit. Witness the synergy of machines and intelligence as we explore the latest in robotics technology. Engage with interactive showcases, from intelligent  algorithms to cutting-edge robots.</p>
+                        </div>
+                        <button class="width-100 btn-2" type="button">View exhibit</button>
                     </div>
                 </article>
 
                 <article class="card">
                     <picture>
                         <source srcset="images/home/exhibition_card_3.webp" type="image/webp">
-                        <img src="exhibition_card_3" alt="Girl exploring a space capsule">
+                        <img class="width-100" src="exhibition_card_3" alt="Girl exploring a space capsule">
                     </picture>
-                    <div>
-                        <h4>Biology and Medicine</h4>
-                        <p>Uncover the complexities of life, from microscopic wonders to the cutting edge of medical advancements.Immerse yourself in interactive displays and discover the incredible stories written within the human body.</p>
-                        <button type="button">View exhibit</button>
+                    <div class="card-bottom flex column" >
+                        <div  class="pd-30-20">
+                            <h4>Biology and Medicine</h4>
+                             <p>Journey through the cosmos in our 'Cosmology' exhibit. Explore star birth, black holes, and the mysteries of space. Uncover the universe's secrets in an interactive experience like no other. Dare to dream beyond the stars.</p>
+                             
+                        </div>
+                        <button class="width-100 btn-2" type="button">View exhibit</button>
+                        
                     </div>
                 </article>
             </div>
 
-            <button type="button">View all</button>
+            <button class="width-100 btn-3 mw-1340" type="button">View all</button>
         </section>
 
-        <section class="special-events">
-            <header>
+        <section class="special-events" id="events">
+            <header class="banner-titles">
                 <h2>Special Events</h2>
                 <div></div>
             </header>
 
-            <article>
+            <article class="mw-1340">
                 <div class="event">
                     <div class="date">
                         <span><time datetime="2023-11-24">Nov 24</time></span>

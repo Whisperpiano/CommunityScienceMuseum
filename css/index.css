@@ -1,0 +1,132 @@
+@import url("styles.css");
+
+.welcome-bkg {
+    background-image: url(/images/home/vector_all.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome article img {
+    margin: auto; 
+}
+
+.welcome article {
+    display: grid;
+    align-items: center;
+    gap: 60px;
+}
+
+.welcome article:nth-child(1) {
+    grid-template-columns: 1fr 3fr;
+}
+.welcome article:nth-child(2) {
+    grid-template-columns: 3fr 1fr;
+}
+
+.welcome article:nth-child(2) picture{
+    order: 2;   
+}
+
+main h3,
+main h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+main h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+main p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner-titles {
+    background: var(--ebony-300);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.exhibition-spaces {
+    background-image: url("/images/home/title_vector-all.svg");
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-container {
+    padding-top: 200px;
+}
+
+.card {
+    flex: 1;
+    background-color: var(--ebony-300);
+}
+
+
+.card-bottom {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.card:first-child button {
+    background: var(--green-light-400) ;
+}
+.card:nth-child(2) button {
+    background: var(--purple-400) ;
+}
+.card:nth-child(3) button {
+    background: var(--blue-400) ;
+}
+
+
+
+
+
+
+
+
+
+
+/*@media (width < 600px) {
+    .welcome article:nth-child(1) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .welcome article:nth-child(2) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .welcome article:nth-child(2) div {
+        order: 2;
+    }
+}*/
+
+/*.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome article{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.welcome article:nth-child(2){
+    flex-direction: row-reverse;
+}
+.welcome picture {
+    width: 100%;
+    flex:1;
+}
+
+.welcome div {
+    flex:3
+}*/
+
+
