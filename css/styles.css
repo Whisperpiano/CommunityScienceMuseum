@@ -1,6 +1,7 @@
 @import url("framework.css");
 @import url("icons.css");
-@import url ("index.css");
+@import url("index.css");
+@import url("header.css");
 
  /* ------------------ VARIABLES ------------------ */
 
@@ -90,8 +91,16 @@
 
     --font-primary: 'Poppins', sans-serif;
 
-}
-
+    --fs-32: 3.2rem;
+    --fs-28: 2.8rem;
+    --fs-25: 2.5rem;
+    --fs-22: 2.2rem;
+    --fs-20: 2rem;
+    --fs-18: 1.8rem;
+    --fs-16: 1.6rem;
+ }
+   
+  
 /* ------------------ RESET ------------------ */
 
     /* ----- BEFORE & AFTER ------ */
@@ -141,6 +150,7 @@
 
     html {
         scroll-behavior: smooth;
+        font-size: 62.5%;
     }
 
     /* ----- TEXT STYLES ----- */
@@ -152,13 +162,6 @@
         text-decoration: none;
         color: inherit;
     }
-
-    h1, .h1{font-size: 80px;}
-    h2, .h2{font-size: 60px;}
-    h3, .h3{font-size: 50px;}
-    h4, .h4{font-size: 30px;}
-    h5, .h5{font-size: 20px;}
-    h6, .h6{font-size: 17px;}
 
     ::selection {
         background-color: var(--color-secondary);
@@ -195,7 +198,6 @@
         font-family: var(--font-primary);
         background: var(--color-primary);
         color: var(--color-secondary);
-        
         line-height: 1.4;
         font-smooth: always;
         -webkit-font-smoothing: antialiased;
@@ -243,57 +245,11 @@
 
     /* ----- HOVERS ----- */
 
-
     /* ----- BORDERS ----- */
 
     /* ----- HEADER ----- */
 
-   /*header {
-    height: 100dvh;
-   }*/
-
-   .logo img {
-    max-width: 100%;
-   }
-
-   header li a {
-    font-size: 18px;
-    font-weight: 700;
-   }
-
-   .hero-header img {
-    width: 100vw;
-    }
-
-    .hero-header__text {
-        position: absolute;
-        top: 20%;
-        left: 10%;
-
-    }
-
-    .hero-header__text h1 {
-        font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 4.4px;
-    }
-
-    .hero-header__text h2{
-        font-size: 22px;
-        font-weight: 400;
-      
-    }
-
-    .hero-header__scroll {
-        position:absolute;
-        bottom: 0;
-        background: rgba(31, 43, 56, 0.5);
-    }
-
-    .hero-header__scroll i {
-        font-size: 24px;
-    }
-
+   
     /* ----- FOOTER ----- */
 
 
