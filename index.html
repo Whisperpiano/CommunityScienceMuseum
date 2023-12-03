@@ -60,7 +60,7 @@
     </header>
 
     <main>
-        <section class="welcome-bkg">
+        <section class="welcome-bkg relative">
             <div class="welcome mw-1340 pd-90-0 flex column gap-60" id="explore">
                 <article>
                     <picture>
@@ -90,7 +90,7 @@
         </section>
         
 
-        <section class="exhibition-spaces">
+        <section class="exhibition-spaces mw-1920">
             <header class="banner-titles">
                 <h2>Exhibition spaces</h2>
             </header>
@@ -136,7 +136,6 @@
                              
                         </div>
                         <button class="width-100 btn-2" type="button">View exhibit</button>
-                        
                     </div>
                 </article>
             </div>
@@ -144,24 +143,24 @@
             <button class="width-100 btn-3 mw-1340" type="button">View all</button>
         </section>
 
-        <section class="special-events" id="events">
+        <section class="special-events mw-1920" id="events">
             <header class="banner-titles">
                 <h2>Special Events</h2>
             </header>
 
             <article class="events-container mw-1340">
-                <div class="event">
-                    <div class="date blue">
+                <div class="event gap-30 relative blue-line">
+                    <div class="date blue flex center align-content-center">
                         <span><time datetime="2023-11-24">Nov 24</time></span>
                     </div>
-                    <div class="event-description pd-30">
+                    <div class="event-description">
                         <h4>Visiting professor of aeronautics</h4>
                         <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
                     </div>
                 </div>
 
-                <div class="event gap-30">
-                    <div class="date ebony">
+                <div class="event gap-30 relative ebony-line">
+                    <div class="date ebony flex center align-content-center">
                         <span><time datetime="2023-11-29">Nov 29</time></span>
                     </div>
                     <div class="event-description">
@@ -170,8 +169,8 @@
                     </div>
                 </div>
 
-                <div class="event gap-30">
-                    <div class="date orange">
+                <div class="event gap-30 relative orange-line">
+                    <div class="date orange flex center align-content-center">
                         <span><time datetime="2023-12-11">Dec 11</time></span>
                     </div>
                     <div class="event-description">
@@ -190,7 +189,7 @@
             </article>
         </section>
 
-        <section class="discover-more">
+        <section class="discover-more mw-1920">
 
             <header class="banner-titles">
                 <h2>Want to discover more?</h2>
@@ -246,7 +245,7 @@
             <button class="btn-3 width-100 mw-1340" type="button">Plan your visit</button>
         </section>
 
-        <section class="gallery">
+        <section class="gallery mw-1920">
 
             <header class="banner-titles">
                 <h2>Share your experience?</h2>
@@ -284,20 +283,20 @@
 
     <footer>
         <div class="flex center justify-sa">
-            <section>
+            <section class="footer-logo flex center">
                 <a href="#" aria-label="Home">
                     <img src="images/home/logo_bw.svg" alt="Logotype of Community Science Museum in black and white">
                 </a>
             </section>
     
-            <section>
-                <nav>
-                    <ul>
+            <section class="footer-nav">
+                <nav class="flex center gap-60">
+                    <ul class="flex column gap-20">
                         <li><a href="#">Exhibitions</a></li>
                         <li><a href="#">Plan your visit</a></li>
                         <li><a href="#">Contribute</a></li>
                     </ul>
-                    <ul>
+                    <ul class="flex column gap-20">
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Contact us</a></li>
                         <li><a href="#">FAQs</a></li>
@@ -305,7 +304,7 @@
                 </nav>
             </section>
             
-            <section>
+            <section class="footer-social">
                 <article>
                     <h5>Follow us!</h5>
                     <p>Stay connected with us on social media! Follow us for a journey filled with curiosity and discovery.</p>

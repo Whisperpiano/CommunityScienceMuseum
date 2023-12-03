@@ -1,13 +1,43 @@
-@import url("styles.css");
-
 .welcome-bkg {
-    background-image: url("../images/home/vector_all.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-width: 1920px;
+    margin: auto;
 }
 
+.welcome::before {
+    content: "";
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    background-image: url("../images/home/vector_main_blue.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -50;
+}
+.welcome::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    background-image: url("../images/home/vector_main_green.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -50;
+}
+
+
 .welcome {
+    background-image: url("../images/home/stars_1920.svg");
+    background-position: center;
 
     & h3 {
         font-size: var(--fs-28);
@@ -51,27 +81,22 @@
     padding-top: 60px;
     padding-bottom: 20px;
     max-height: 12rem;
-    max-width: 1440px;
-    margin: auto;
 }
 
 .banner-titles::after {
-    content: url("../images/home/title_vector.svg");
-    max-width: 1440px;
-    width: 100%;
-}
-
-.banner-titles::before {
-    content: url("../images/home/title_vector-shadow.svg");
+    content: "";
     position: absolute;
+    top: 100;
+    left: 0;
+    background-image: url("../images/home/vector_banners_complete.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 300px;
     z-index: -10;
 }
 
-.exhibition-spaces{
-    display: grid;
-    place-content: center;
-}
+
 
 .card-container {
     padding-top: 160px;
@@ -111,18 +136,13 @@
     }
 }
 
-.special-events {
-    display: grid;
-    place-content: center;
-}
-
 .events-container {
     padding-top: 160px;
 
     & span {
         font-size: var(--fs-32);
         font-weight: 700;
-        letter-spacing: 3.2px;
+        letter-spacing: 3.2px; 
     }
 
     & h4 {
@@ -152,8 +172,6 @@
         aspect-ratio: 1;
         max-width: 200px;
         width: 100%;
-        display: grid;
-        place-content: center;
     }
 
 }
@@ -163,21 +181,46 @@
     align-items: center;
 }
 
+.blue-line::before {
+    content: "";
+    border: 3px solid var(--blue-300);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.ebony-line::before {
+    content: "";
+    border: 3px solid var(--blue-500);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.orange-line::before {
+    content: "";
+    border: 3px solid var(--orange-300);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
 .donate_banner {
     background-image: url("../images/home/donate_scaled.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     max-width: 1920px;
-    max-height: 200px;
+    min-height: 200px;
     width: 100%;
-    height: 100%;
+    
     margin-top: 90px;
     margin-bottom: 90px;
 
     & div {
         width: 50%;
-        height: 100%;
         background-color:rgba(31, 43, 56, 0.8);
         float: right;
         display: flex;
@@ -194,14 +237,7 @@
             font-size: 1.4rem;
             font-weight: 400; 
         }
-
-       
     }
-}
-
-.discover-more {
-    display: grid;
-    place-content: center;
 }
 
 .discover-more__container {
@@ -248,8 +284,8 @@
 }
 
 .gallery {
-    display: grid;
-    place-content: center;
+    /*display: grid;
+    place-content: center;*/
     background: var(--blue-400); 
 }
 
@@ -277,6 +313,7 @@
 
 footer {
     background-color: var(--ebony-300);
+    
 
 }
 
@@ -290,6 +327,22 @@ footer {
     
 }
 
+.footer-logo,
+.footer-nav,
+.footer-social {
+    flex: 1;
+}
+
+.footer-nav li,
+footer h5 {
+    font-size: var(--fs-16);
+    font-weight: 600;
+}
+
+footer p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
 
 
 
