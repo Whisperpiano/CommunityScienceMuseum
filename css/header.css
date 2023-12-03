@@ -29,7 +29,7 @@ header {
     position: relative;
     align-items: center;
     flex: 1;
-    background-image: url("images/home/Hero_header_scaled_2.webp");
+    background-image: url("../images/home/Hero_header_scaled_2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
