@@ -1,0 +1,16 @@
+.facebook-icon::after {
+    content: url("../images/home/facebook_icon.webp");
+}
+.twitter-icon::after {
+    content: url("../images/home/twitter_icon.webp");
+    fill: red;
+}
+.youtube-icon::after {
+    content: url("../images/home/youtube_icon.webp");
+}
+.instagram-icon::after {
+    content: url("../images/home/instagram_icon.webp");
+}
+.pinterest-icon::after {
+    content: url("../images/home/pinterest_icon.webp");
+}
