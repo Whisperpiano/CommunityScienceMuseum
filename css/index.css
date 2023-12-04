@@ -165,7 +165,7 @@
         background: var(--blue-500);
     }
     & .orange {
-        background: var(--orange-300);
+        background: var(--orange-400);
     }
     
     & .date {
@@ -199,7 +199,7 @@
 }
 .orange-line::before {
     content: "";
-    border: 3px solid var(--orange-300);
+    border: 3px solid var(--orange-400);
     position: absolute;
     bottom: 0;
     left: 0;

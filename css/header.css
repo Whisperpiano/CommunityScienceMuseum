@@ -1,16 +1,14 @@
-@import url("styles.css");
-
 /* HEADER */
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100dvh;
+    background: var(--ebony-500);
 
     & .logo img {
         width: 100%;
-    }
+        }
 
     & nav li {
         font-size: var(--fs-18);
@@ -18,7 +16,7 @@ header {
 
     & .btn-1 {
         font-weight: 600;
-    }
+        }
 
     }
 }
@@ -29,6 +27,8 @@ header {
     position: relative;
     align-items: center;
     flex: 1;
+    height: calc(100dvh - 150px);
+    
     background-image: url("../images/home/Hero_header_scaled_2.webp");
     background-position: center;
     background-repeat: no-repeat;

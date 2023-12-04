@@ -23,6 +23,8 @@
 .flex.justify-se{justify-content: space-evenly; width: 100%;}
 .no-wrap{flex-wrap: nowrap;}
 
+.inline {display: inline;}
+
 .align-items-center{align-items: center;}
 .align-content-center{align-content: center;}
 .center{justify-content: center;}
