@@ -1,0 +1,75 @@
+.contact-container {
+    display: flex;
+    gap: 90px;
+
+    & h6 {
+        font-size: var(--fs-18);
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    & p, li, a, address {
+        font-size: var(--fs-16);
+        font-weight: 400;
+    }
+
+}
+
+.info {
+    background: var(--foundation-scientific-blue-b-300, #3498DB);
+    
+}
+
+
+
+.accessibility-container {
+    display: flex;
+    gap: 30px;
+
+    & .card {
+        flex: 1;
+        
+    }
+
+    & article:first-child .top{
+        background-color: var(--yellow-300);
+
+    }
+    & article:nth-child(2) .top{
+        background-color: var(--green-light-300);
+    }
+    & article:nth-child(3) .top{
+        background-color: var(--orange-300);
+    }
+
+    & article .top {
+        display: flex;
+        justify-content: center;
+        padding: 60px;
+    }
+
+    & article .bottom {
+        text-align: center;
+        padding: 30px;
+        background: var(--ebony-300);
+
+        & h6 {
+            font-size:var(--fs-18) ;
+            font-weight: 700;
+            padding-bottom: 20px;
+        }
+
+        & p {
+            font-size: var(--fs-16);
+            font-weight: 400;
+        }
+        
+    }
+    
+}
+
+.map  iframe {
+    width: 100%;
+    min-height: 600px;
+}
+  

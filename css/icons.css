@@ -14,3 +14,13 @@
 .pinterest-icon::after {
     content: url("../images/home/pinterest_icon.webp");
 }
+
+.accessibility-icon::after {
+    content: url("../images/contact/accessibility_icon.svg");
+}
+.food-icon::after {
+    content: url("../images/contact/food_icon.svg");
+}
+.shop-icon::after {
+    content: url("../images/contact/shop_icon.svg");
+}
