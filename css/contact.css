@@ -1,3 +1,5 @@
+/* Information */
+
 .contact-container {
     display: flex;
     gap: 90px;
@@ -16,11 +18,11 @@
 }
 
 .info {
-    background: var(--foundation-scientific-blue-b-300, #3498DB);
+    background: var(--blue-400);
     
 }
 
-
+/* Accessibility cards */
 
 .accessibility-container {
     display: flex;
@@ -67,6 +69,84 @@
     }
     
 }
+
+/* Contact form */
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    & a {
+        text-decoration: underline;
+        color: var(--blue-100);
+    }
+
+    & button {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        background: var(--blue-400);
+        padding: 10px 30px;
+        cursor: pointer;
+       }
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 16px;
+
+    & input, textarea {
+        border-bottom: 2px solid var(--blue-300);
+        padding: 10px 10px;
+        outline: none;
+        transition: all 0.5s ease;
+        border:2px solid rgba(235, 245, 251, 0.1);
+        border-bottom: 2px solid var(--blue-100);
+        background: rgba(235, 245, 251, 0.02);
+
+        &:valid {
+            border: 2px solid var(--blue-300);
+            background: transparent;
+            
+        }
+        &:focus {
+            border: 2px solid var(--blue-300);
+            background: transparent;
+        }
+    }
+
+    & input:valid ~ label, 
+    input:focus ~ label,
+    textarea:valid ~ label, 
+    textarea:focus ~ label {
+        color: var(--blue-300);
+        opacity: 1;
+        transform: translateX(10px) translateY(-10px);
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0px 10px;
+        letter-spacing: 1px;
+        background: var(--ebony-400);
+        border-left: 2px solid var(--blue-300);
+        border-right: 2px solid var(--blue-300);
+    }
+
+    & label {
+        position: absolute;
+        pointer-events: none;
+        padding: 10px;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease;
+        opacity: .3;
+    }
+}
+
+/* Map */
 
 .map  iframe {
     width: 100%;

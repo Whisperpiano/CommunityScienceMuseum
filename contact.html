@@ -86,37 +86,35 @@
 
                     <p>We'd love to hear from you! Fill out the contact form below and let us know how we can make your experience at the Community Science Museum even more amazing. We're here to answer your questions and welcome your feedback. Explore the world of science with us!</p>
 
-                    <div>
-                        <label for="inquiry">Type of inquiry*</label>
-                        <select name="inquiry" id="inquiry" required>
-                            <option value="general">General inquiry</option>
-                            <option value="plan">Plan your visit</option>
-                            <option value="support">Technical support</option>
-                            <option value="feedback">Feedback</option>
-                        </select>
+                    <div class="input-box">
+                        <input type="text" id="inquiry"  name="inquiry" required>
+                        <label for="inquiry">Describe your inquiry *</label>
                     </div>
 
-                    <div>
-                        <label for="name">Your name*</label>
+                    <div class="input-box">
                         <input type="text" id="name"  name="name" required>
+                        <label for="name">Your name *</label>
                     </div>
 
-                    <div>
-                        <label for="email">Your email*</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="two-inputs flex no-wrap gap-30">
+                        <div class="input-box">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your email *</label>
+                        </div>
+    
+                        <div class="input-box">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Your phone *</label>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="phone">Your phone*</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-
-                    <div>
-                        <label for="message">Your message*</label>
+                    <div class="input-box">
                         <textarea name="message" id="message" required></textarea>
+                        <label for="message">Your message *</label>
+                        
                     </div>
 
-                    <p>Your details will not be used for anything else other tan responding to your inquiry. For full details of how we handle personal data, check out our privacy policy.</p>
+                    <p>Your details will not be used for anything else other tan responding to your inquiry. For full details of how we handle personal data, check out our <a href="policy.html">privacy policy</a>.</p>
 
                     <button type="submit" aria-label="Submit inquiry">Submit</button>
                 </form>

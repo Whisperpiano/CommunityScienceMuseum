@@ -24,33 +24,35 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <picture>
-                <img src="images/home/Logo.svg" alt="Logotype of Community Science Museum">
-            </picture>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Exhibitions</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Visit</a></li>
-                <li><a href="#">About</a></li>
-                <li><button type="button">Donate</button></li>
-            </ul>
-        </nav>
+    <header>   
+        <section class="header-top flex justify-sb align-items-center pd-40">
+            <div class="logo">
+                <picture>
+                    <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
+                </picture>
+            </div>
+            <nav>
+                <ul class="flex align-items-center gap-30">
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="contact.html">Visit</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><button type="button"><a href="contributions.html" class="btn-1 pd-10-30">Donate</a></button></li>
+                </ul>
+            </nav>
+        </section>
     </header>
    
     <main>
         <section class="top-banner">
-            <header>
+            <div class="pd-40">
                 <h1>Terms and conditions</h1>
-                <h2>Last updated: <time datetime="2023-12-16">December 16, 2023</time></h2>
-            </header>
+                <h2>Last updated: <time datetime="2023-12-17">December 17, 2023</time></h2>
+            </div>
         </section>
 
-        <section>
+        <section class="documents-container mw-1920">
             <div>
                 <h3>Introduction</h3>
                 <p>Welcome to the Community Science Museum website. By accessing our website, you agree to these terms and conditions Please read them carefully.</p>
@@ -106,44 +108,46 @@
             
     </main>
 
-    <footer>
-        <section>
-            <a href="#" aria-label="Home">
-                <img src="images/home/logo_bw.svg" alt="Logotype of Community Science Museum in black and white">
-            </a>
-        </section>
+    <footer class="relative">
+        <div class="flex center justify-sa">
+            <section class="footer-logo flex center">
+                <a href="#" aria-label="Home" class="pd-30">
+                    <img src="images/home/logo_bw.svg" alt="Logotype of Community Science Museum in black and white">
+                </a>
+            </section>
+    
+            <section class="footer-nav">
+                <nav class="flex center gap-60 pd-30">
+                    <ul class="flex column">
+                        <li><a href="#">Exhibitions</a></li>
+                        <li><a href="#">Plan your visit</a></li>
+                        <li><a href="#">Contribute</a></li>
+                    </ul>
+                    <ul class="flex column gap-0">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </nav>
+            </section>
+            
+            <section class="footer-social">
+                <article class="pd-30">
+                    <h5>Follow us!</h5>
+                    <p>Stay connected with us on social media! Follow us for a journey filled with curiosity and discovery.</p>
+                    <ul class="flex gap-50">
+                        <li><i class="facebook-icon"></i></li>
+                        <li><i class="twitter-icon"></i></li>
+                        <li><i class="youtube-icon"></i></li>
+                        <li><i class="instagram-icon"></i></li>
+                        <li><i class="pinterest-icon"></i></li>
+                    </ul>
+                    <p>#CommunityScienceMuseum #ExploreWithUs</p>
+                </article>
+            </section>
+        </div>
 
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="#">Exhibitions</a></li>
-                    <li><a href="#">Plan your visit</a></li>
-                    <li><a href="#">Contribute</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-            </nav>
-        </section>
-        
-        <section>
-            <article>
-                <h5>Follow us!</h5>
-                <p>Stay connected with us on social media! Follow us for a journey filled with curiosity and discovery.</p>
-                <ul>
-                    <li><i class="facebook-icon"></i></li>
-                    <li><i class="twitter-icon"></i></li>
-                    <li><i class="youtube-icon"></i></li>
-                    <li><i class="instagram-icon"></i></li>
-                    <li><i class="pinterest-icon"></i></li>
-                </ul>
-                <p>#CommunityScienceMuseum #ExploreWithUs</p>
-            </article>
-        </section>
-        
-        <section>
+        <section class="copyright">
             <p>All rights reserved. © Community Science Museum 2023</p>
         </section>
 

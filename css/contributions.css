@@ -1,0 +1,78 @@
+.contributions {
+
+    & h3 {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.contributions-container {
+    & article {
+        display: grid;
+        align-items: center;
+        gap: 60px;
+
+        & img {
+            min-width: 295px;
+            margin: auto;
+        }
+
+        &:nth-child(1) {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        &:nth-child(3) {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        &:nth-child(2) {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+
+            & picture {
+                order: 2;
+            }
+        }
+
+    }
+
+
+}
+
+.phrase {
+    margin-bottom: 200px;
+    background-image: linear-gradient(0deg, rgba(27, 38, 49, 0.50) 0%, rgba(27, 38, 49, 0.50) 100%), url("../images/donate/together_scaled.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & h2 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    & h3 {
+        font-size: 28px;
+        font-weight: 400;
+        text-align: right;
+        padding-top: 20px;
+        font-style: italic;
+    }
+
+    & div {
+        padding: 120px;
+        display: grid;
+        place-content: center;
+    }
+}
+
+
