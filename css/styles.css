@@ -8,6 +8,8 @@
 @import url("policy.css");
 @import url("terms.css");
 @import url("footer.css");
+@import url("keyframes.css");
+
 
 
 
@@ -382,17 +384,17 @@
             }
         }
 
-        footer li {
+        footer li,
+        footer img {
             transition: opacity 300ms ease;
         }
 
-        footer li:hover {
+        footer li:hover,
+        footer img:hover {
             opacity: .8;
         }
 
-
-
- 
+          
 
 
 /* h1{font-size: clamp(2.5rem, 5vw, 3.2rem);}
