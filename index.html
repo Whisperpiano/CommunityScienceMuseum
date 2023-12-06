@@ -16,7 +16,6 @@
 
     <link rel="icon" type="image/svg" href="images/favicon.svg">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +28,9 @@
     <header>   
         <section class="header-top flex justify-sb align-items-center pd-40">
             <div class="logo">
-                <picture>
+                <figure>
                     <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
-                </picture>
+                </figure>
             </div>
             <nav>
                 <ul class="flex align-items-center gap-30">
@@ -40,7 +39,7 @@
                     <li><a href="#events">Events</a></li>
                     <li><a href="contact.html">Visit</a></li>
                     <li><a href="#">About</a></li>
-                    <li><button type="button"><a href="contributions.html" class="btn-1 pd-10-30">Donate</a></button></li>
+                    <li><button class="btn-1 pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
                 </ul>
             </nav>
         </section>
@@ -62,10 +61,10 @@
         </section>
 
         <section class="welcome-bkg relative">
-            <div class="welcome mw-1340 pd-90-0 flex column gap-60" id="explore">
-                <article>
+            <div class="welcome flex column" id="explore">
+                <article class="mw-1340">
                     <picture>
-                        <source srcset="images/home/img_1_vector.webp" type="image/webp">
+                        <source srcset="images/home/img_1_vector_400.webp" type="image/webp">
                         <img src="img_1" alt="Girl playing VR">
                     </picture>
                     <div>
@@ -75,9 +74,9 @@
                     </div>
                 </article>
     
-                <article>
+                <article class="mw-1340">
                     <picture>
-                        <source srcset="images/home/img_2_vector.webp" type="image/webp">
+                        <source srcset="images/home/img_2_vector_400.webp" type="image/webp">
                         <img src="img_2" alt="Girl exploring the sky with a telescope">
                     </picture>
                     <div>
@@ -91,7 +90,7 @@
         </section>
         
 
-        <section class="exhibition-spaces mw-1920">
+        <section class="exhibition-spaces">
             <header class="banner-titles">
                 <h2>Exhibition spaces</h2>
             </header>
@@ -144,7 +143,7 @@
             <button class="width-100 btn-3 mw-1340" type="button">View all</button>
         </section>
 
-        <section class="special-events mw-1920" id="events">
+        <section class="special-events" id="events">
             <header class="banner-titles">
                 <h2>Special Events</h2>
             </header>
@@ -190,7 +189,7 @@
             </article>
         </section>
 
-        <section class="discover-more mw-1920">
+        <section class="discover-more relative dots">
 
             <header class="banner-titles">
                 <h2>Want to discover more?</h2>
@@ -246,10 +245,10 @@
             <button class="btn-3 width-100 mw-1340" type="button">Plan your visit</button>
         </section>
 
-        <section class="gallery mw-1920">
+        <section class="gallery">
 
             <header class="banner-titles">
-                <h2>Share your experience?</h2>
+                <h2>Share your experience</h2>
             </header>
 
             <div class="gallery-container">
