@@ -225,6 +225,7 @@
         font-weight: 600;
         letter-spacing: 1.8px;
         cursor: pointer;
+        position: relative;
     }
 
     .btn-2 {
@@ -245,9 +246,150 @@
         letter-spacing: 1.8px;
         font-weight: 600;
         margin-bottom: 90px;
+        position: relative;
     }
 
     /* ----- HOVERS ----- */
+
+        /* SCROLL HOVER */
+
+        .header-hero__scroll:hover {
+            background: rgba(31, 43, 56, 0.6);
+        }
+
+        /* BTN 1 HOVER */
+        .btn-1.btn-background-slide::before {
+            content:"";
+            position: absolute;
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            right: 0;
+            background: var(--orange-300);
+            transform: scale(0);
+            transform-origin: left;
+            z-index: -1;
+            transition: transform 300ms ease;
+        }
+
+        .btn-1.btn-background-slide {
+            z-index: 1;   
+        }
+
+        .btn-1.btn-background-slide:hover::before,
+        .btn-1.btn-background-slide:focus::before {
+            transform: scale(1);
+        }
+
+        /* BTN 3 HOVER */
+        .btn-3.btn-background-slide::before {
+            content:"";
+            position: absolute;
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            right: 0;
+            background: var(--blue-500);
+            transform: scale(0);
+            transform-origin: left;
+            z-index: -1;
+            transition: transform 300ms ease;
+        }
+
+        .btn-3.btn-background-slide {
+            z-index: 1;   
+        }
+
+        .btn-3.btn-background-slide:hover::before,
+        .btn-3.btn-background-slide:focus::before {
+            transform: scale(1);
+        }
+
+        /* ANCHORS UNDERLINE*/
+        .link-underline.btn-border-underline::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            background-color: var(--color-secondary);
+            opacity: .9;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 300ms ease;
+        }
+
+        .link-underline.btn-border-underline:hover::before,
+        .link-underline.btn-border-underline:focus::before {
+            transform: scaleX(1);
+        }
+
+        /* OPACITY HOVERS */
+
+        .logo,
+        .link-underline {
+            transition: opacity 300ms ease;
+        }
+
+        .logo:hover,
+        .link-underline:hover {
+            opacity: .8;
+        }
+
+        /* IMG HOVER */
+
+        .card {
+            flex: 1;
+            background: var(--ebony-300);
+
+            & button {
+                transition: background 300ms ease;
+            }
+
+            & img {
+                transition: transform 300ms ease;
+            }
+            
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            &:nth-child(1) button:hover {
+                background: var(--green-light-300);
+            }
+
+            &:nth-child(2) button:hover {
+                background: var(--purple-300);
+            }
+
+            &:nth-child(3) button:hover {
+                background: var(--blue-300) ;
+            } 
+        }
+
+        .gallery picture {
+            overflow: hidden;
+
+            & img {
+                transition: transform 300ms ease;
+            }
+
+            & img:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        footer li {
+            transition: opacity 300ms ease;
+        }
+
+        footer li:hover {
+            opacity: .8;
+        }
+
 
 
  

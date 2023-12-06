@@ -112,6 +112,10 @@
 .card-container {
     padding-top: 160px;
     padding-bottom: 60px;
+
+    & picture {
+        overflow: hidden;
+    }
     
 
     & h4 {
@@ -128,12 +132,16 @@
         flex: 1;
         background: var(--ebony-300);
 
+        &:hover img {
+            transform: scale(1.1);
+        }
+
         &:nth-child(1) button {
             background: var(--green-light-500);
         }
 
         &:nth-child(2) button {
-            background: var(--purple-400);
+            background: var(--purple-500);
         }
 
         &:nth-child(3) button {
@@ -145,7 +153,6 @@
             margin-right: 20px;
             margin-bottom: 20px;
         }
-
     }
 }
 

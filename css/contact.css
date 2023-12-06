@@ -30,6 +30,10 @@
     & a {
         text-decoration: underline;
         color: var(--blue-100);
+
+        &:hover {
+            color: var(--blue-75);
+        }
     }
 
     & button {
@@ -40,6 +44,11 @@
         background: var(--blue-400);
         padding: 10px 30px;
         cursor: pointer;
+        transition: background 300ms ease;
+
+        &:hover {
+            background: var(--blue-300);
+        }
        }
 }
 
