@@ -28,7 +28,6 @@ header {
     align-items: center;
     flex: 1;
     height: calc(100dvh - 150px);
-    
     background-image: url("../images/home/Hero_header_scaled_2.webp");
     background-position: center;
     background-repeat: no-repeat;

@@ -27,18 +27,18 @@
     <header>   
         <section class="header-top flex justify-sb align-items-center pd-40">
             <div class="logo">
-                <picture>
+                <figure>
                     <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
-                </picture>
+                </figure>
             </div>
             <nav>
                 <ul class="flex align-items-center gap-30">
-                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="index.html">Explore</a></li>
                     <li><a href="exhibitions.html">Exhibitions</a></li>
-                    <li><a href="#events">Events</a></li>
+                    <li><a href="index.html#events">Events</a></li>
                     <li><a href="contact.html">Visit</a></li>
                     <li><a href="#">About</a></li>
-                    <li><button type="button"><a href="contributions.html" class="btn-1 pd-10-30">Donate</a></button></li>
+                    <li><button class="btn-1 pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
                 </ul>
             </nav>
         </section>
@@ -52,11 +52,12 @@
             </div>
         </section>
 
-        <section class="contributions mw-1340">
+        <section class="contributions mw-1340 dots">  
+            <div class="pd-top-100">
+                <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
+            </div>
 
-            <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
-
-            <div class="contributions-container flex column gap-60 pd-top-60">
+            <div class="contributions-container flex column gap-60 pd-top-100">
                 <article class="donate">
                     <picture>
                         <source srcset="images/donate/donate.webp" type="image/webp">
@@ -91,7 +92,7 @@
                 </article>
             </div>  
 
-            <button class="width-100 btn-3" type="button">Contact us</button>
+            <button class="width-100 btn-3" type="button" onclick="window.location.href='contact.html'">Contact us</button>
         </section>
 
         <section class="phrase">
@@ -105,7 +106,7 @@
     <footer class="relative">
         <div class="flex center justify-sa">
             <section class="footer-logo flex center">
-                <a href="#" aria-label="Home" class="pd-30">
+                <a href="index.html" aria-label="Home" class="pd-30">
                     <img src="images/home/logo_bw.svg" alt="Logotype of Community Science Museum in black and white">
                 </a>
             </section>
@@ -113,14 +114,14 @@
             <section class="footer-nav">
                 <nav class="flex center gap-60 pd-30">
                     <ul class="flex column">
-                        <li><a href="#">Exhibitions</a></li>
-                        <li><a href="#">Plan your visit</a></li>
-                        <li><a href="#">Contribute</a></li>
+                        <li><a href="exhibitions.html">Exhibitions</a></li>
+                        <li><a href="contact.html">Plan your visit</a></li>
+                        <li><a href="contributions.html">Contribute</a></li>
                     </ul>
                     <ul class="flex column gap-0">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="policy.html">Privacy Policy</a></li>
                     </ul>
                 </nav>
             </section>
@@ -144,7 +145,6 @@
         <section class="copyright">
             <p>All rights reserved. © Community Science Museum 2023</p>
         </section>
-
     </footer>
 
 </body>

@@ -1,5 +1,9 @@
 /* Information */
 
+.info {
+    background: var(--blue-400); 
+}
+
 .contact-container {
     display: flex;
     gap: 90px;
@@ -14,60 +18,6 @@
         font-size: var(--fs-16);
         font-weight: 400;
     }
-
-}
-
-.info {
-    background: var(--blue-400);
-    
-}
-
-/* Accessibility cards */
-
-.accessibility-container {
-    display: flex;
-    gap: 30px;
-
-    & .card {
-        flex: 1;
-        
-    }
-
-    & article:first-child .top{
-        background-color: var(--yellow-300);
-
-    }
-    & article:nth-child(2) .top{
-        background-color: var(--green-light-300);
-    }
-    & article:nth-child(3) .top{
-        background-color: var(--orange-300);
-    }
-
-    & article .top {
-        display: flex;
-        justify-content: center;
-        padding: 60px;
-    }
-
-    & article .bottom {
-        text-align: center;
-        padding: 30px;
-        background: var(--ebony-300);
-
-        & h6 {
-            font-size:var(--fs-18) ;
-            font-weight: 700;
-            padding-bottom: 20px;
-        }
-
-        & p {
-            font-size: var(--fs-16);
-            font-weight: 400;
-        }
-        
-    }
-    
 }
 
 /* Contact form */
@@ -146,10 +96,60 @@
     }
 }
 
+/* Accessibility cards */
+
+.accessibility-container {
+    display: flex;
+    gap: 30px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    & .card {
+        flex: 1;  
+    }
+
+    & article:first-child .top{
+        background-color: var(--yellow-300);
+    }
+
+    & article:nth-child(2) .top{
+        background-color: var(--green-light-300);
+    }
+
+    & article:nth-child(3) .top{
+        background-color: var(--orange-300);
+    }
+
+    & article .top {
+        display: flex;
+        justify-content: center;
+        padding: 60px;
+    }
+
+    & article .bottom {
+        text-align: center;
+        padding: 30px;
+        background: var(--ebony-300);
+
+        & h6 {
+            font-size:var(--fs-18) ;
+            font-weight: 700;
+            padding-bottom: 20px;
+        }
+
+        & p {
+            font-size: var(--fs-16);
+            font-weight: 400;
+        }
+    } 
+}
+
 /* Map */
 
 .map  iframe {
     width: 100%;
     min-height: 600px;
+   
+    padding-bottom: 10px;
 }
   

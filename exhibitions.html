@@ -27,18 +27,18 @@
     <header>   
         <section class="header-top flex justify-sb align-items-center pd-40">
             <div class="logo">
-                <picture>
+                <figure>
                     <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
-                </picture>
+                </figure>
             </div>
             <nav>
                 <ul class="flex align-items-center gap-30">
-                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="index.html">Explore</a></li>
                     <li><a href="exhibitions.html">Exhibitions</a></li>
-                    <li><a href="#events">Events</a></li>
+                    <li><a href="index.html#events">Events</a></li>
                     <li><a href="contact.html">Visit</a></li>
                     <li><a href="#">About</a></li>
-                    <li><button type="button"><a href="contributions.html" class="btn-1 pd-10-30">Donate</a></button></li>
+                    <li><button class="btn-1 pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
                 </ul>
             </nav>
         </section>
@@ -46,21 +46,21 @@
     
     <main>
         <section class="top-banner">
-            <div class="pd-40">
+            <div class="pd-60">
                 <h1>Exhibitions</h1>
                 <h2>Explore together</h2>
             </div>
         </section>
 
         <section class="exhibitions">
-            <article class="cosmology">
+            <article class="cosmology" id="cosmology">
                 <div class="exhibition-picture">
                     <picture>
                         <source srcset="images/exhibitions/cosmology.webp" type="image/webp">
                         <img src="cosmology" alt="Image of phases of a lunar and solar eclipse.">
                     </picture>
                 </div>
-                <div class="exhibition-content flex column center">
+                <div class="exhibition-content exhibition-background flex column center">
                     <div>
                         <h3>Cosmology</h3>
                         <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
@@ -70,7 +70,7 @@
                 </div>
             </article>
 
-            <article class="evolution">
+            <article class="evolution" id="evolution">
                 <div class="exhibition-picture">
                     <picture>
                         <source srcset="images/exhibitions/evolution.webp" type="image/webp">
@@ -88,7 +88,7 @@
                 </div>
             </article>
 
-            <article class="biology">
+            <article class="biology" id="biology">
                 <div class="exhibition-picture">
                     <picture>
                         <source srcset="images/exhibitions/biology.webp" type="image/webp">
@@ -106,7 +106,7 @@
                 </div>
             </article>
             
-            <article class="robotics">
+            <article class="robotics" id="robotics">
                 <div class="exhibition-picture">
                     <picture>
                         <source srcset="images/exhibitions/robotics.webp" type="image/webp">
@@ -124,7 +124,7 @@
                 </div>
             </article>
 
-            <article class="ecology">
+            <article class="ecology" id="ecology">
                 <div class="exhibition-picture">
                     <picture>
                         <source srcset="images/exhibitions/ecology.webp" type="image/webp">
@@ -146,7 +146,7 @@
     <footer class="relative">
         <div class="flex center justify-sa">
             <section class="footer-logo flex center">
-                <a href="#" aria-label="Home" class="pd-30">
+                <a href="index.html" aria-label="Home" class="pd-30">
                     <img src="images/home/logo_bw.svg" alt="Logotype of Community Science Museum in black and white">
                 </a>
             </section>
@@ -154,14 +154,14 @@
             <section class="footer-nav">
                 <nav class="flex center gap-60 pd-30">
                     <ul class="flex column">
-                        <li><a href="#">Exhibitions</a></li>
-                        <li><a href="#">Plan your visit</a></li>
-                        <li><a href="#">Contribute</a></li>
+                        <li><a href="exhibitions.html">Exhibitions</a></li>
+                        <li><a href="contact.html">Plan your visit</a></li>
+                        <li><a href="contributions.html">Contribute</a></li>
                     </ul>
                     <ul class="flex column gap-0">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="policy.html">Privacy Policy</a></li>
                     </ul>
                 </nav>
             </section>
@@ -185,7 +185,6 @@
         <section class="copyright">
             <p>All rights reserved. © Community Science Museum 2023</p>
         </section>
-
     </footer>
 
 </body>

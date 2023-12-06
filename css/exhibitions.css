@@ -1,5 +1,10 @@
+/* Top banner*/
+
 .top-banner {
     background: var(--ebony-500);
+    text-align: center;
+    border-top: 5px solid var(--ebony-400);
+   
 
     & h1, h2 {
         font-size: var(--fs-32);
@@ -8,10 +13,13 @@
     }
 
     & h2 {
-        color: var(--ebony-300);
+        color: var(--ebony-75);
     }
 
 }
+
+/* Exhibitions */
+
 
 .exhibitions {
 
@@ -31,37 +39,37 @@
         background: var(--ebony-400);
         background-image: url("../images/exhibitions/stars_vector.svg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        background-position: top;
     }
     & .evolution .exhibition-content {
         background: var(--green-light-500);
         background-image: url("../images/exhibitions/evolution_vector.svg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        background-position: top;
         
     }
     & .biology .exhibition-content {
         background: var(--orange-500);
         background-image: url("../images/exhibitions/medicine_vector.svg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        background-position: top;
     }
     & .robotics .exhibition-content {
         background: var(--purple-500);
         background-image: url("../images/exhibitions/robotics_vector.svg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        background-position: top;
     }
     & .ecology .exhibition-content {
         background: var(--green-500);
         background-image: url("../images/exhibitions/ecology_vector.svg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        background-position: top;
     }
 
     & .cosmology .exhibition-picture {
@@ -79,6 +87,21 @@
     & .ecology .exhibition-picture {
         background: var(--green-100)
     }
+
+    & .exhibition-content {
+        flex: 4;
+        height: 100vh;
+    }
+
+    & .exhibition-picture {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;    
+        align-self: stretch;
+        min-width: 400px;
+    }
 }
 
 
@@ -94,6 +117,7 @@
     }
 
     & .exhibition-content {
+        
         padding-left: 150px;
         padding-right: calc(100px + 196px);
     }
@@ -113,25 +137,3 @@
         padding-left: calc(100px + 196px);
     }
 }
-
-
-.exhibition-picture {
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;    
-    align-self: stretch;
-    min-width: 400px;
-
-    
-}
-
-
-.exhibition-content {
-    flex: 4;
-    min-height: 900px;
-}
-
-
-
