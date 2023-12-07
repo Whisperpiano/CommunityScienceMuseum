@@ -31,7 +31,7 @@
                     <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
                 </figure>
             </div>
-            <nav>
+            <nav class="nav-desktop">
                 <ul class="flex align-items-center gap-30">
                     <li><a class="link-underline btn-border-underline relative" href="index.html">Explore</a></li>
                     <li><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
@@ -41,10 +41,38 @@
                     <li><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
                 </ul>
             </nav>
+            <div class="hamburger-menu">
+                <label class="icons" for="check">
+                    <input type="checkbox" id="check">
+                    <div class="hamburger-icon" id="open">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="hamburger-icon" id="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <nav class="nav-bar">
+                        <ul class="flex align-items-center gap-30">
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="index.html">Explore</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#events">Events</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="contact.html">Visit</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#">About</a></li>
+                            <li class="links"><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
+                        </ul>
+                        <ul class="flex justify-se">
+                            <li><i class="facebook-icon"></i></li>
+                            <li><i class="twitter-icon"></i></li>
+                            <li><i class="youtube-icon"></i></li>
+                            <li><i class="instagram-icon"></i></li>
+                            <li><i class="pinterest-icon"></i></li>
+                        </ul>
+                    </nav>
+                </label>
+            </div>
         </section>
     </header>
     
-    <main>
+    <main class="exhibitions-main">
         <section class="top-banner">
             <div class="pd-60">
                 <h1>Exhibitions</h1>

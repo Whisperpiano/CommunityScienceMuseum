@@ -109,12 +109,15 @@
 
 .accessibility-container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding-top: 160px;
     padding-bottom: 160px;
 
     & .card {
-        flex: 1;  
+        flex: 1 0 320px;  
+        max-width: 450px;
     }
 
     & article:first-child .top{

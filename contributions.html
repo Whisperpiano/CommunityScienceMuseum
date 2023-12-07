@@ -31,7 +31,7 @@
                     <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
                 </figure>
             </div>
-            <nav>
+            <nav class="nav-desktop">
                 <ul class="flex align-items-center gap-30">
                     <li><a class="link-underline btn-border-underline relative" href="index.html">Explore</a></li>
                     <li><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
@@ -41,10 +41,38 @@
                     <li><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
                 </ul>
             </nav>
+            <div class="hamburger-menu">
+                <label class="icons" for="check">
+                    <input type="checkbox" id="check">
+                    <div class="hamburger-icon" id="open">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="hamburger-icon" id="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <nav class="nav-bar">
+                        <ul class="flex align-items-center gap-30">
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="index.html">Explore</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#events">Events</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="contact.html">Visit</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#">About</a></li>
+                            <li class="links"><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
+                        </ul>
+                        <ul class="flex justify-se">
+                            <li><i class="facebook-icon"></i></li>
+                            <li><i class="twitter-icon"></i></li>
+                            <li><i class="youtube-icon"></i></li>
+                            <li><i class="instagram-icon"></i></li>
+                            <li><i class="pinterest-icon"></i></li>
+                        </ul>
+                    </nav>
+                </label>
+            </div>
         </section>
     </header>
    
-    <main>
+    <main class="contributions-main">
         <section class="top-banner">
             <div class="pd-60">
                 <h1>Donate</h1>
@@ -52,7 +80,7 @@
             </div>
         </section>
 
-        <section class="contributions mw-1340 dots">  
+        <section class="contributions mw-1340 dots pd-0-20">  
             <div class="pd-top-100">
                 <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
             </div>
@@ -92,7 +120,7 @@
                 </article>
             </div>  
 
-            <button class="width-100 btn-3" type="button" onclick="window.location.href='contact.html'">Contact us</button>
+            <button class="width-100 btn-3 btn-background-slide" type="button" onclick="window.location.href='contact.html'">Contact us</button>
         </section>
 
         <section class="phrase">

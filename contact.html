@@ -31,7 +31,7 @@
                     <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
                 </figure>
             </div>
-            <nav>
+            <nav class="nav-desktop">
                 <ul class="flex align-items-center gap-30">
                     <li><a class="link-underline btn-border-underline relative" href="index.html">Explore</a></li>
                     <li><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
@@ -41,10 +41,38 @@
                     <li><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
                 </ul>
             </nav>
+            <div class="hamburger-menu">
+                <label class="icons" for="check">
+                    <input type="checkbox" id="check">
+                    <div class="hamburger-icon" id="open">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="hamburger-icon" id="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <nav class="nav-bar">
+                        <ul class="flex align-items-center gap-30">
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="index.html">Explore</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#events">Events</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="contact.html">Visit</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#">About</a></li>
+                            <li class="links"><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
+                        </ul>
+                        <ul class="flex justify-se">
+                            <li><i class="facebook-icon"></i></li>
+                            <li><i class="twitter-icon"></i></li>
+                            <li><i class="youtube-icon"></i></li>
+                            <li><i class="instagram-icon"></i></li>
+                            <li><i class="pinterest-icon"></i></li>
+                        </ul>
+                    </nav>
+                </label>
+            </div>
         </section>
     </header>
    
-    <main>
+    <main class="contact-main">
         <section class="top-banner">
             <div class="pd-60">
                 <h1>Exhibitions</h1>
@@ -54,7 +82,7 @@
 
         <section class="contact-container mw-1340 pd-top-100">
             <article class="info">
-                <div class="pd-30">
+                <div class="text pd-30">
                     <p>The entrance is <strong>free</strong> for all.</p>
 
                     <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
@@ -81,12 +109,12 @@
                 </div>
             </article>
 
-            <article class="contact">
+            <article class="contact pd-0-20">
                 <form action="#" method="post" id="contactForm">
 
                     <p>We'd love to hear from you! Fill out the contact form below and let us know how we can make your experience at the Community Science Museum even more amazing. We're here to answer your questions and welcome your feedback. Explore the world of science with us!</p>
 
-                    <div class="input-box">
+                    <div class="first-input-box input-box">
                         <input type="text" id="inquiry"  name="inquiry" required>
                         <label for="inquiry">Describe your inquiry *</label>
                     </div>
@@ -97,12 +125,12 @@
                     </div>
 
                     <div class="two-inputs flex no-wrap gap-30">
-                        <div class="input-box">
+                        <div class="input-box width-100">
                             <input type="email" id="email" name="email" required>
                             <label for="email">Your email *</label>
                         </div>
     
-                        <div class="input-box">
+                        <div class="input-box width-100">
                             <input type="tel" id="phone" name="phone" required>
                             <label for="phone">Your phone *</label>
                         </div>

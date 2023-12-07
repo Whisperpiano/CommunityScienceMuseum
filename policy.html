@@ -31,7 +31,7 @@
                     <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
                 </figure>
             </div>
-            <nav>
+            <nav class="nav-desktop">
                 <ul class="flex align-items-center gap-30">
                     <li><a class="link-underline btn-border-underline relative" href="index.html">Explore</a></li>
                     <li><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
@@ -41,6 +41,34 @@
                     <li><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
                 </ul>
             </nav>
+            <div class="hamburger-menu">
+                <label class="icons" for="check">
+                    <input type="checkbox" id="check">
+                    <div class="hamburger-icon" id="open">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="hamburger-icon" id="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <nav class="nav-bar">
+                        <ul class="flex align-items-center gap-30">
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="index.html">Explore</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#events">Events</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="contact.html">Visit</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#">About</a></li>
+                            <li class="links"><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
+                        </ul>
+                        <ul class="flex justify-se">
+                            <li><i class="facebook-icon"></i></li>
+                            <li><i class="twitter-icon"></i></li>
+                            <li><i class="youtube-icon"></i></li>
+                            <li><i class="instagram-icon"></i></li>
+                            <li><i class="pinterest-icon"></i></li>
+                        </ul>
+                    </nav>
+                </label>
+            </div>
         </section>
     </header>
    
@@ -52,7 +80,7 @@
             </div>
         </section>
 
-        <section class="documents-container mw-1920">
+        <section class="documents-container mw-1920 pd-0-20">
             <div>
                 <h3>Introduction</h3>
                 <p>Welcome to Community Science Museum, a community science museum located in Stavanger, Norway. Our website is dedicated to providing information about our museum, including exhibits, events, and educational resources. This privacy policy outlines how we handle information collected through our website.</p>

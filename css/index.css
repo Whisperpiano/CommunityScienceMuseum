@@ -59,7 +59,7 @@
 
         & img {
             margin:auto;
-            min-width: 400px;
+            min-width: 200px;
         }
 
         &:nth-child(1) {
