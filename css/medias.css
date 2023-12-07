@@ -249,10 +249,9 @@
     /* FONT SIZES */
 
     h1 {font-size: 2.8rem !important;}
-    h2 {font-size: 1.6rem !important;}
     h3 {font-size:2.2rem !important;}
     h4 {font-size:2rem !important;}
-    li, span, p, label, a  {font-size: 1.4rem !important;}
+    li, span, p, , a  {font-size: 1.4rem !important;}
 
     .copyright p {font-size: 1.2rem !important;}
 
@@ -260,14 +259,27 @@
 
     .contributions-main .phrase h3 { font-size: 1.6rem !important;}
 
-    .banner-titles h2 {font-size: 2.4rem !important;}
-
     .date span {font-size: 2.8rem !important;}
 
     /* INDEX PAGE */
 
+
+   .pd-50 {
+    padding: 20px !important;
+   }
+
+    .hamburger-menu .fa-solid {
+            width: 40px !important;
+            height: 40px !important;
+        }
+
+    .pd-50 {
+        padding: 50px;
+        padding-top: 20px;
+    }
+
     .welcome img {
-        max-width: 190px;
+        max-width: 180px;
     }
     .accessibility-container {
         padding-top: 40px;
@@ -347,6 +359,16 @@
             background-position: center;
             background-size: cover;
             background-position: center;
+        }
+    } 
+
+    /* CONTACT PAGE */
+
+    .phrase  div{
+        padding: 50px !important;
+
+        & h2 { 
+            font-size: 2.2rem;
         }
     }
 

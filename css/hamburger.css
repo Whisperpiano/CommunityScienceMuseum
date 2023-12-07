@@ -28,6 +28,12 @@
         height: 50px;
         background-color: var(--ebony-300);
         cursor: pointer;
+        transition: outline 300ms ease, opacity 300ms ease;
+    }
+
+    & .fa-solid:hover {
+        outline: 1px solid rgba(172, 213, 240, 0.3);
+        opacity: .8;
     }
 }
 
