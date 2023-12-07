@@ -187,6 +187,7 @@
 
     & .date {
         aspect-ratio: 1;
+        min-width: 200px;
         max-width: 200px;
         width: 100%;
     }
@@ -343,10 +344,9 @@
     }
 
 }
+/*
 
-
-
-/*@media (width < 600px) {
+@media (width < 600px) {
     .welcome article:nth-child(1) {
         grid-template-columns: 1fr;
         text-align: center;
@@ -358,9 +358,9 @@
     .welcome article:nth-child(2) div {
         order: 2;
     }
-}*/
+}
 
-/*.welcome {
+.welcome {
     display: flex;
     flex-direction: column;
 }
@@ -381,5 +381,11 @@
 .welcome div {
     flex:3
 }*/
+
+
+
+
+
+
 
 

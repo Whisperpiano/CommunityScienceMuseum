@@ -21,7 +21,6 @@ header {
     }
 }
 
-
 .header-hero {
     display: flex;
     position: relative;
@@ -69,5 +68,7 @@ header {
             font-size: 2.4rem;
         }
     }
+
+    /* */
 
 }

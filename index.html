@@ -32,7 +32,7 @@
                     <a href="index.html"><img src="images/home/Logo.svg" alt="Logotype of Community Science Museum"></a>
                 </figure>
             </div>
-            <nav>
+            <nav class="nav-desktop">
                 <ul class="flex align-items-center gap-30">
                     <li><a class="link-underline btn-border-underline relative" href="#explore">Explore</a></li>
                     <li><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
@@ -42,10 +42,38 @@
                     <li><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
                 </ul>
             </nav>
+            <div class="hamburger-menu">
+                <label class="icons" for="check">
+                    <input type="checkbox" id="check">
+                    <div class="hamburger-icon" id="open">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="hamburger-icon" id="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <nav class="nav-bar">
+                        <ul class="flex align-items-center gap-30">
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#explore">Explore</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="exhibitions.html">Exhibitions</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#events">Events</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="contact.html">Visit</a></li>
+                            <li class="links"><a class="link-underline btn-border-underline relative" href="#">About</a></li>
+                            <li class="links"><button class="btn-1 btn-background-slide pd-10-30" type="button" onclick="window.location.href='contributions.html'">Donate</button></li>
+                        </ul>
+                        <ul class="flex justify-se">
+                            <li><i class="facebook-icon"></i></li>
+                            <li><i class="twitter-icon"></i></li>
+                            <li><i class="youtube-icon"></i></li>
+                            <li><i class="instagram-icon"></i></li>
+                            <li><i class="pinterest-icon"></i></li>
+                        </ul>
+                    </nav>
+                </label>
+            </div>
         </section>
     </header>
 
-    <main>
+    <main class="index">
         <section class="header-hero animated-background width-100">
             <div class="header-hero__text mw-630">
                 <h1 >Explore, learn and ignite your passion for science.</h1>
@@ -62,7 +90,7 @@
 
         <section class="welcome-bkg relative ">
             <div class="welcome flex column" id="explore">
-                <article class="mw-1340">
+                <article class="mw-1340 pd-0-20">
                     <picture>
                         <source srcset="images/home/img_1_vector_400.webp" type="image/webp">
                         <img src="img_1" alt="Girl playing VR">
@@ -74,7 +102,7 @@
                     </div>
                 </article>
     
-                <article class="mw-1340">
+                <article class="mw-1340 pd-0-20">
                     <picture>
                         <source srcset="images/home/img_2_vector_400.webp" type="image/webp">
                         <img src="img_2" alt="Girl exploring the sky with a telescope">
@@ -94,7 +122,7 @@
                 <h2>Exhibition spaces</h2>
             </header>
 
-            <div class="card-container flex gap-30 text-center mw-1340">
+            <div class="card-container flex gap-30 text-center mw-1340 pd-0-20">
                 <article class="card">
                     <picture>
                         <source srcset="images/home/exhibition_card_1.webp" type="image/webp">
@@ -139,7 +167,9 @@
                 </article>
             </div>
 
-            <button class="width-100 btn-3 btn-background-slide mw-1340" type="button" onclick="window.location.href='exhibitions.html'">View all</button>
+            <div class="pd-0-20">
+                <button class="width-100 btn-3 btn-background-slide mw-1340" type="button" onclick="window.location.href='exhibitions.html'">View all</button>
+            </div>
         </section>
 
         <section class="special-events" id="events">
@@ -147,7 +177,7 @@
                 <h2>Special Events</h2>
             </header>
 
-            <article class="events-container mw-1340">
+            <article class="events-container mw-1340 pd-0-20">
                 <div class="event gap-30 relative blue-line">
                     <div class="date blue flex center align-content-center">
                         <span><time datetime="2023-11-24">Nov 24</time></span>
@@ -196,7 +226,7 @@
                 </header>
     
                 <div class="discover-more__container flex column gap-60 mw-1340">
-                    <article>
+                    <article class="pd-0-20">
                         <picture>
                             <source srcset="images/home/discover_kids.webp" type="image/webp">
                             <img src="discover-kids" alt="Girl in scientist's coat doing a water evaporation experiment">
@@ -211,7 +241,7 @@
                         </div>
                     </article>
         
-                    <article>
+                    <article class="pd-0-20">
                         <picture>
                             <source srcset="images/home/discover_teachers.webp" type="image/webp">
                             <img src="discover-teachers" alt="Teacher explaining to students on the blackboard">
@@ -226,13 +256,13 @@
                         </div>
                     </article>
         
-                    <article>
+                    <article class="pd-0-20">
                         <picture>
                             <source srcset="images/home/discover_researchers.webp" type="image/webp">
                             <img src="discover-researchers" alt="Scientist putting tests in container">
                         </picture>
                         <div>
-                            <h4>Kids</h4>
+                            <h4>Researchers</h4>
                             <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
                             <p class="pd-top-10">You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds,so make sure you come ready to learn and explore.</p>
                             <p class="pd-top-10">We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.</p>
@@ -242,7 +272,10 @@
                     </article>
                 </div>
             </div>
-            <button class="width-100 btn-3 btn-background-slide mw-1340" type="button" onclick="window.location.href='contact.html'">Plan your visit</button>
+            <div class="pd-0-20">
+                <button class="width-100 btn-3 btn-background-slide mw-1340" type="button" onclick="window.location.href='contact.html'">Plan your visit</button>
+            </div>
+            
         </section>
 
         <section class="gallery">
@@ -250,7 +283,7 @@
                 <h2>Share your experience</h2>
             </header>
 
-            <div class="gallery-container">
+            <div class="gallery-container pd-0-20">
                 <picture>
                     <source srcset="images/home/gallery_1.webp" type="image/webp">
                     <img src="gallery_1" alt="Group of children using our 3D printer">
