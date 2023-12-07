@@ -1,6 +1,5 @@
 /* Tablets or small screen laptops */
 
-
 @media (width < 1024px) {
 
     /* ----> INDEX PAGE <----*/
@@ -108,6 +107,11 @@
      /* ----> EXHIBITIONS PAGE <----*/
 
      .exhibitions-main {
+        & h1, h2 {font-size: var(--fs-28);}
+
+        & h3 {font-size: var(--fs-32);}
+        
+        & p {font-size: var(--fs-20);}
 
         & .cosmology,
         .biology,
@@ -135,9 +139,7 @@
             padding-top: 200px;
             padding-bottom: 160px;
         }
-
      }
-
 
      /* ----> CONTACT PAGE <----*/
 
@@ -244,16 +246,31 @@
 
 @media (width < 480px) {
 
+    /* FONT SIZES */
+
+    h1 {font-size: 2.8rem !important;}
+    h2 {font-size: 1.6rem !important;}
+    h3 {font-size:2.2rem !important;}
+    h4 {font-size:2rem !important;}
+    li, span, p, label, a  {font-size: 1.4rem !important;}
+
+    .copyright p {font-size: 1.2rem !important;}
+
+    .btn-1, .btn-2, .btn-3 {font-size: 1.4rem !important;}
+
+    .contributions-main .phrase h3 { font-size: 1.6rem !important;}
+
+    .banner-titles h2 {font-size: 2.4rem !important;}
+
+    .date span {font-size: 2.8rem !important;}
+
     /* INDEX PAGE */
 
     .welcome img {
         max-width: 190px;
     }
-    
-    .index .btn-3,
-    .events-container,
-    .donate_banner {
-        margin-bottom: 100px;
+    .accessibility-container {
+        padding-top: 40px;
     }
 
     .card-container,
@@ -261,6 +278,24 @@
     .discover-more__container,
     .gallery-container {
         padding-top: 100px;
+    }
+    .pd-top-100 {
+        padding-top: 60px;
+    }
+
+    .documents-container h3 {
+        padding-top: 30px;
+    }
+
+    .documents-container p,
+    .documents-container li {
+        padding-top: 10px;
+    }
+
+    .index .btn-3,
+    .events-container,
+    .donate_banner {
+        margin-bottom: 100px;
     }
 
     .gallery-container {
@@ -281,14 +316,39 @@
         }
     }
 
-    /* CONTRIBUTIONS PAGE */
+    .exhibitions {
 
-
-    
-    
-      
-
-    
+        & .cosmology .exhibition-content {
+            background-image: url("../images/exhibitions/cosmology_small.svg");
+            background-position: center;
+            background-size: cover;
+            background-position: center;
+        }
+        & .evolution .exhibition-content {
+            background-image: url("../images/exhibitions/evolution_small.svg");
+            background-position: center;
+            background-size: cover;
+            background-position: center;
+        }
+        & .biology .exhibition-content {
+            background-image: url("../images/exhibitions/biology_small.svg");
+            background-position: center;
+            background-size: cover;
+            background-position: center;
+        }
+        & .robotics .exhibition-content {
+            background-image: url("../images/exhibitions/robotics_small.svg");
+            background-position: center;
+            background-size: cover;
+            background-position: center;
+        }
+        & .ecology .exhibition-content {
+            background-image: url("../images/exhibitions/ecology_small.svg");
+            background-position: center;
+            background-size: cover;
+            background-position: center;
+        }
+    }
 
     /* FOOTER */
 
@@ -296,6 +356,6 @@
         flex-direction: column;
         text-align: center;
         padding-bottom: 0px;
-    }
+    } 
 }
 

@@ -341,48 +341,7 @@
     & picture:nth-child(4) {
         grid-column: span 2;
     }
-
 }
-/*
-
-@media (width < 600px) {
-    .welcome article:nth-child(1) {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .welcome article:nth-child(2) {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .welcome article:nth-child(2) div {
-        order: 2;
-    }
-}
-
-.welcome {
-    display: flex;
-    flex-direction: column;
-}
-
-.welcome article{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-.welcome article:nth-child(2){
-    flex-direction: row-reverse;
-}
-.welcome picture {
-    width: 100%;
-    flex:1;
-}
-
-.welcome div {
-    flex:3
-}*/
-
-
-
 
 
 
