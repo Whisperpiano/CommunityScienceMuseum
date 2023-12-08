@@ -39,6 +39,7 @@
     background-position: center;
     height: 100vh;
     gap: 10rem;
+    animation: pulse-background 3s infinite alternate ease-in-out;
     
     
     & h3 {
