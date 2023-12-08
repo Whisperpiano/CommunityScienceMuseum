@@ -31,24 +31,28 @@
     z-index: -50;
 }
 
+.welcome-bkg {
+    background-image: url("../images/home/stars_1920.svg");
+    background-position: center;
+    animation: pulse-background 3s infinite alternate ease-in-out;
+
+}
+
 .welcome {
     display: flex;
     align-content: center;
     justify-content: center;
-    background-image: url("../images/home/stars_1920.svg");
-    background-position: center;
     height: 100vh;
     gap: 10rem;
-    animation: pulse-background 3s infinite alternate ease-in-out;
     
-    
+ 
     & h3 {
-        font-size: var(--fs-28);
+        font-size: var(--fs-32);
         font-weight: 700;
     }
 
     & p {
-        font-size: var(--fs-16);
+        font-size: var(--fs-18);
         font-weight: 400;
     }
 
