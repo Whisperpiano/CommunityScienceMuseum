@@ -2,12 +2,13 @@
 
 .info {
     background: var(--blue-400); 
-
+    max-width: 350px;
 }
 
 .contact-container {
     display: flex;
-    gap: 90px;
+    gap:30px;
+    
 
     & h6 {
         font-size: var(--fs-18);
@@ -46,6 +47,7 @@
         padding: 10px 30px;
         cursor: pointer;
         transition: background 300ms ease;
+        margin-bottom: 0;
 
         &:hover {
             background: var(--blue-300);
@@ -61,7 +63,7 @@
 
     & textarea {
         resize: none;
-        min-height: 250px;
+        min-height: 200px;
     }
 
 

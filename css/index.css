@@ -116,9 +116,18 @@
 .card-container {
     padding-top: 160px;
     padding-bottom: 60px;
+    display: flex;
+    gap: 30px;
 
     & picture {
         overflow: hidden;
+        min-height: 260px;
+        
+
+        & img {
+            height: 100%;
+            object-fit: cover;
+        }
     }
     
 
@@ -133,7 +142,6 @@
     }
 
     & .card {
-        flex: 1;
         background: var(--ebony-300);
 
         &:hover img {
@@ -153,6 +161,10 @@
         }
 
         & .card-bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
             margin-left: 20px;
             margin-right: 20px;
             margin-bottom: 20px;
@@ -252,12 +264,14 @@
             font-size: var(--fs-22);
             font-weight: 700;
             margin-bottom: 20px;
+            max-width: 500px;
         }
 
         & p {
             font-size: 1.4rem;
             font-weight: 400; 
             margin-bottom: 20px;
+            max-width: 600px;
         }
     }
 }

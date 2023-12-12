@@ -14,7 +14,6 @@
 
 #check:checked + #open + #close +.nav-bar {
     height: calc(100vh - 150px);
-    display: block;
 }
 
 .hamburger-menu {
@@ -39,7 +38,7 @@
 
 .nav-bar {
     
-    display: flex;
+    display: block;
     justify-content: flex-end;
     position: absolute;
     right: 0;

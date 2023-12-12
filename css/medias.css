@@ -149,6 +149,12 @@
         flex-direction: column;
         text-align: center;
 
+        & .info {
+            
+            max-width: 100%;
+        }
+        
+
         & .text {
             margin: auto;
             max-width: 400px;
@@ -234,6 +240,10 @@
            }
     }
 
+    .phrase  div{
+        padding: 50px;
+    }
+
     /* CONTACT PAGE */
 
     .contact .two-inputs {
@@ -266,10 +276,24 @@
 
     /* INDEX PAGE */
 
+    header .pd-40 {
+        padding: 20px;
+    }
+
 
    .pd-50 {
-    padding: 20px !important;
+    padding: 20px;
    }
+
+   .header-hero,
+   header #check:checked + #open + #close + .nav-bar {
+    height: calc(100vh - 110px) ;
+   }
+
+   header .nav-bar {
+    top: 110px;
+   }
+
 
     .hamburger-menu .fa-solid {
             width: 40px !important;
@@ -319,6 +343,10 @@
 
     .gap-50 {
         gap: 20px;
+    }
+
+    .index .card-container picture {
+        min-height: 100px;
     }
 
     /* ----> EXHIBITIONS PAGE <----*/
