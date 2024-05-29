@@ -35,7 +35,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#screenshots-of-gameon">Screenshots of CSM</a></li>
+        <li><a href="#screenshots-of-csm">Screenshots of CSM</a></li>
       </ul>
     </li>
     <li>
