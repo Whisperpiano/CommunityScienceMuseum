@@ -10,7 +10,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://whisperpiano.github.io/SemesterProject1_CommunityScienceMuseum/index.html">
+  <a href="https://whisperpiano.github.io/CommunityScienceMuseum/index.html">
     <img src="images/home/Logo.svg" alt="Logo" width="180" height="80">
   </a>
 
@@ -21,9 +21,9 @@
     <br />
     <a href="https://www.figma.com/design/aSoMQfBuZhdytD74bjYZLm/Semester-Project-1?node-id=0-1&t=2ikfyzxeZjKWqVJs-11">Figma file</a>
     ·
-    <a href="https://github.com/Whisperpiano/SemesterProject1_CommunityScienceMuseum/issues">Report Bug</a>
+    <a href="https://github.com/Whisperpiano/CommunityScienceMuseum/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Whisperpiano/SemesterProject1_CommunityScienceMuseum/issues">Request Feature</a>
+    <a href="https://github.com/Whisperpiano/CommunityScienceMuseum/issues">Request Feature</a>
   </p>
 </div>
 
@@ -35,7 +35,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#screenshots-of-gameon">Screenshots of GameOn</a></li>
+        <li><a href="#screenshots-of-gameon">Screenshots of CSM</a></li>
       </ul>
     </li>
     <li>
@@ -55,19 +55,21 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This was my first project where I applied what I learned about HTML, CSS, and vanilla JavaScript during the first semester of my Front-end Development studies at Noroff School. Once I created a responsive and functional webpage, I needed to build an online store to display products from an API endpoint and allow users to create a basket of items.
+This was my second project during my Front-end studies at Noroff School. For this project, the focus was to apply the knowledge gained in HTML and CSS. The project simulated a real-world brief that I might receive from a web agency.
 
+My task was to design a modern, accessible, and responsive website for the client. Additionally, the website needed to appeal to a younger audience without appearing pandering. The primary goal of the site was to excite and entice people to visit the museum.
+
+Since the client did not provide a logo, I designed one using Figma.
 
 ### Built With
 
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-### Screenshots of GameOn
+### Screenshots of CSM
 
-![Desktop screenshot](https://github.com/Whisperpiano/GameOn/blob/main/images/gameon_desktop_small.jpg)
-![Mobile schreenshots](https://github.com/Whisperpiano/GameOn/blob/main/images/gameon_mobile_small.jpg)
+![Desktop screenshot](https://github.com/Whisperpiano/CommunityScienceMuseum/blob/main/images/csm_desktop_small.jpg)
+![Mobile schreenshots](https://github.com/Whisperpiano/CommunityScienceMuseum/blob/main/images/csm_mobile_small.jpg)
 
 
 <!-- GETTING STARTED -->
@@ -81,13 +83,13 @@ Make sure you have Git installed on your local machine. You can download it from
 
 Clone the repo:
    ```sh
-   git clone https://github.com/Whisperpiano/GameOn.git
+   git clone https://github.com/Whisperpiano/CommunityScienceMuseum.git
    ```
 ### Open the project
 
 Navigate to the project directory:
    ```sh
-   cd GameOn
+   cd CommunityScienceMuseum
    ```
 
 Open the project with VSCode:
@@ -104,7 +106,7 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
-1. [Fork](https://github.com/Whisperpiano/GameOn/fork) the Project.
+1. [Fork](https://github.com/Whisperpiano/CommunityScienceMuseum/fork) the Project.
 2. Clone your fork ( `git clone <URL of your fork>` )
 3. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 4. Make your changes to the codebase.
