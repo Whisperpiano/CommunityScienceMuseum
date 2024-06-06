@@ -16,9 +16,16 @@
 
   <h3 align="center">CSM - Community Science Museum</h3>
   CSM is a website for a museum. Its core target audience is primary and middle school children (ages 7-15) and families with young children.
+
+  <div align="center"> 
+  <br /> 
+    
+  [![Preview](https://img.shields.io/badge/Preview-blue?style=for-the-badge)](https://whisperpiano.github.io/CommunityScienceMuseum/index.html)
+   
+
+  </div>
+  
   <p align="center">
-    <br />
-    <br />
     <a href="https://www.figma.com/design/aSoMQfBuZhdytD74bjYZLm/Semester-Project-1?node-id=0-1&t=2ikfyzxeZjKWqVJs-11">Figma file</a>
     ·
     <a href="https://github.com/Whisperpiano/CommunityScienceMuseum/issues">Report Bug</a>
